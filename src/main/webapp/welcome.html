@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+section{
+	padding: 60px 0;
+	overflow: hidden;
+}
+#hero{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("prd.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+#hero .container{
+	padding-top: 80px;
+}
+#hero h1{
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 56px;
+	color: #fff;
+	margin: 0 0 10px 0;
+}
+#hero h2{
+	color: #eee;
+	margin-bottom: 40px;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+#hero .btn_get_started{
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 8px 28px;
+	border-radius: 50px;
+	margin: 10px;
+	border: 2px solid #fff;
+	background-color: transparent;
+	color: #fff;
+	transition: 0.5s all;
+}
+#hero .btn_get_started:hover {
+	background-color: #ff8c00;
+	border: 2px solid #ff8c00;
+}
+#navigation{
+	top: 20px;
+	padding: 0;
+	transition: 0.5s all;	
+}
+#navigation .logo{
+	padding: 14px 13px;
+	background-color: #ff8c00;
+}
+#navigation .logo a{
+	font-size: 25px;
+	padding: 0;
+	line-height: 1;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+#navigation .btn_get_startedd{
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 8px 28px;
+	border-radius: 10px;
+	margin: 10px;
+	border: 2px solid #ff8c00;
+	background-color: #ff8c00;
+	color: #000000;
+	transition: 0.5s all;
+}
+#navigation .btn_get_startedd:hover {
+	background-color: #ff8c00;
+	border: 2px solid #fff;
+	color: #fff;
+}
+</style>
+</head>
+<body>
+	<nav id="navigation" class="navbar navbar-expand-lg fixed-top">
+	<div class="container align-items-stretch">
+	<div class="logo"><a class="navbar-brand" href="#">Employee Management</a></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+        <form action="display">
+          <button type="submit" class="btn_get_startedd">Display Employee</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<section id="hero" class="d-flex align-items-center">
+		<div class="container text-center">
+		<form action="welcome">
+			<h1>This is My Advance Java Project</h1>
+			<h2>Join Our Team and Learn How to Build Application</h2>
+			<button type="submit" class="btn_get_started">Add Employee</button>
+		</form>
+		</div>
+	</section>
+</body>
+</html>

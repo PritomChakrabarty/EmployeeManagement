@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update Page</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+ background: url("bg.jpg");
+}
+</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="text-center bg-dark text-light py-3">
+			<h1 class="display-6">Update Form</h1>
+		</header>
+		<section class="container my-2 bg-dark w-50 text-light p-2">
+			<form class="row g-3" action="update">
+				  <div class="col-md-6 mt-2">
+				    <label for="inputEmail4" class="form-label">Employee Id</label>
+				    <input type="number" class="form-control" id="inputEmail4" name="id">
+				  </div>
+				  <div class="col-md-6 mt-2">
+				    <label for="inputPassword4" class="form-label">Employee Name</label>
+				    <input type="text" class="form-control" id="inputPassword4" name="name">
+				  </div>
+				  <div class="col-md-6 mt-2">
+				    <label for="inputAddress" class="form-label">Employee Age</label>
+				    <input type="number" class="form-control" id="inputAddress" name="age">
+				  </div>
+				  <div class="col-md-6 mt-2">
+				    <label for="inputAddress2" class="form-label">Employee Email</label>
+				    <input type="email" class="form-control" id="inputAddress2" name="email">
+				  </div>
+				  <div class="col-md-6 mt-2">
+				    <label for="inputCity" class="form-label">Employee Salary</label>
+				    <input type="number" class="form-control" id="inputCity" name="salary">
+				  </div>
+				  <div class="col-12 mt-2">
+				    <div class="form-check">
+				      <input class="form-check-input" type="checkbox" id="gridCheck">
+				      <label class="form-check-label" for="gridCheck">
+				        Check me out
+				      </label>
+				    </div>
+				  </div>
+				  <div class="col-12 mt-2">
+				    <button type="submit" class="btn btn-primary">Update</button>
+				  </div>
+				</form>
+		</section>
+	</div>
+</body>
+</html>
