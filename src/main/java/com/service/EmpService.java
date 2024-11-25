@@ -68,7 +68,7 @@ public class EmpService {
 	// Update Employee
 	public static int updateEmp(Employee empl) {
 		int no2= 0;
-		String upd = "update emp set name = ?, age = ?, email = ? salary = ? where id = ?;";
+		String upd = "update emp set name = ?, age = ?, email = ?, salary = ? where id = ?";
 		try {
 			PreparedStatement pstm = con.prepareStatement(upd);
 
@@ -87,7 +87,7 @@ public class EmpService {
 	// Delete Employee
 	public int deleteEmp(int id) {
 		int no1= 0;
-		String del = "delete from emp where id = ?;";
+		String del = "delete from emp where id = ?";
 		try {
 			PreparedStatement pstm = con.prepareStatement(del);
 
